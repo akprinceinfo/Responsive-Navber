@@ -111,4 +111,9 @@ nav .manu-btn i {
     nav .manu-btn i {
         display: block;
     }
+
+    #click:checked ~ .manu-btn i:before {
+        content: "\f00d";
+    }
+
 }
