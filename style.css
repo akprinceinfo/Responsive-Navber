@@ -1,0 +1,114 @@
+/*===========
+custom css
+==============*/
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/*Start coad */
+nav {
+    height: 80px;
+    background: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px 0px 30px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 6px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    /*    background: green;*/
+    padding: 8px 10px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+
+
+nav ul li a:hover,
+nav ul li a.active {
+    background: green;
+    color: #fff;
+}
+
+
+.logo-area h3 {
+    color: aliceblue;
+    font-size: 40px;
+}
+
+nav .manu-btn i {
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+
+#click:checked ~ ul {
+    left: 0%;
+}
+
+#click {
+    display: none;
+}
+
+@media (max-width:940px) {
+    nav ul {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        height: 100vh;
+        width: 100%;
+        background: black;
+        display: block;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    nav ul li {
+        margin: 40px 0;
+    }
+
+    nav ul li a {
+        font-size: 20 px;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+        background: none;
+        color: cyan;
+    }
+
+    nav .manu-btn i {
+        display: block;
+    }
+}
